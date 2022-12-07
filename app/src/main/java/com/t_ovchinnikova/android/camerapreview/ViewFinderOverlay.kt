@@ -29,7 +29,8 @@ class ViewFinderOverlay(context: Context, attrs: AttributeSet?) : View(context, 
 
     private var boxRect: RectF? = null
 
-    init {
+    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+        super.onSizeChanged(w, h, oldw, oldh)
         setViewFinder()
     }
 

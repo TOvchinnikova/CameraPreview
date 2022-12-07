@@ -62,9 +62,7 @@ fun CameraPreview(
         }
     )
     AndroidView(factory = {
-        ViewFinderOverlay(context = it, attrs = null).apply {
-            setViewFinder()
-        }
+        ViewFinderOverlay(context = it, attrs = null)
     }
     )
 }
